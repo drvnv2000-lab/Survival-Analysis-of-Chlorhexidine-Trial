@@ -32,7 +32,7 @@ The dataset comes from this published randomized controlled trial:
 
 > Vyas N, Mathur P, Jhawar S, Prabhune A, Vimal P. *Effectiveness of Oral Hygiene with Chlorhexidine Mouthwash with 0.12% and 0.2% Concentration on Incidence of Ventilator Associated Pneumonia (VAP) in Intubated Patients – A Parallel arm Double Blind Randomized Controlled Trial.* Annals of International Medical and Dental Research. 2021;7(3). [doi:10.21276/aimdr.2021.7.3.AN2](https://doi.org/10.21276/aimdr.2021.7.3.AN2)
 
-**Data note:** `Data/Data form Chlorhexidine Trial.xlsx` holds 106 patients × 85 variables (trial arm, age, gender, APACHE II, and daily TLC, CPIS, chest X-ray, ABG, culture, oral microbial load and ulcer readings). It contains no names or patient identifiers. It is used here for educational analysis; rights to the data remain with the trial investigators.
+**Data note:** `Data/Data form Chlorhexidine Trial.xlsx` holds 106 patients × 85 variables (trial arm, age, gender, APACHE II, and daily TLC, CPIS, chest X-ray, ABG, culture, oral microbial load and ulcer readings). It contains no names or patient identifiers. It is published here with permission from the trial's co-investigator, Dr. Akash Prabhune; rights to the data remain with the trial investigators.
 
 ---
 
