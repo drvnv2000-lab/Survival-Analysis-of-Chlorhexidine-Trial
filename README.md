@@ -1,7 +1,7 @@
-# Survival-Analysis-of-Chlorhexidine-Trial
-A high-quality clinical data science project performing survival analysis on Chlorhexidine trial data using CPIS trends, Kaplan–Meier survival curves, Log-Rank tests, Cox PH modelling, and diagnostics. 
 # 🧪 Chlorhexidine Survival Analysis  
 ### A Full Clinical Data Science Pipeline Using Python | Kaplan–Meier • Log-Rank • Cox PH
+
+Survival analysis of a randomized controlled trial comparing **0.12% vs 0.20% chlorhexidine** oral care for preventing **ventilator-associated pneumonia (VAP)** in intubated ICU patients, using CPIS trends, Kaplan–Meier survival curves, log-rank tests, Cox PH modelling and diagnostics.
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
@@ -26,20 +26,26 @@ The pipeline uses a real-world hospital dataset and demonstrates:
 
 ---
 
+## 📚 **Source Study & Data**
+
+The dataset comes from this published randomized controlled trial:
+
+> Vyas N, Mathur P, Jhawar S, Prabhune A, Vimal P. *Effectiveness of Oral Hygiene with Chlorhexidine Mouthwash with 0.12% and 0.2% Concentration on Incidence of Ventilator Associated Pneumonia (VAP) in Intubated Patients – A Parallel arm Double Blind Randomized Controlled Trial.* Annals of International Medical and Dental Research. 2021;7(3). [doi:10.21276/aimdr.2021.7.3.AN2](https://doi.org/10.21276/aimdr.2021.7.3.AN2)
+
+**Data note:** `Data/Data form Chlorhexidine Trial.xlsx` holds 106 patients × 85 variables (trial arm, age, gender, APACHE II, and daily TLC, CPIS, chest X-ray, ABG, culture, oral microbial load and ulcer readings). It contains no names or patient identifiers. It is used here for educational analysis; rights to the data remain with the trial investigators.
+
+---
+
 ## 📂 **Repository Contents**
-📦 chlorhexidine-survival-analysis
-│
-
-├── chlorhexidine.ipynb # Main analysis notebook
-
-├── README.md # Documentation
-
-├── requirements.txt # Dependencies (recommended)
-
- └── /data
-
-  └── Data form Chlorhexidine.xlsx 
-
+```
+📦 Survival-Analysis-of-Chlorhexidine-Trial
+├── chlorhexidine_survival_analysis.ipynb   # Main analysis notebook
+├── requirements.txt                        # Dependencies
+├── README.md                               # Documentation
+├── LICENSE                                 # MIT (code only)
+└── Data/
+    └── Data form Chlorhexidine Trial.xlsx  # De-identified trial dataset
+```
 
 ---
 
@@ -155,9 +161,18 @@ Assesses proportional hazards using Schoenfeld residuals:
 
 ### **1. Clone the repository**
 ```bash
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
+git clone https://github.com/drvnv2000-lab/Survival-Analysis-of-Chlorhexidine-Trial.git
+cd Survival-Analysis-of-Chlorhexidine-Trial
 ```
+
+### **2. Install dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+### **3. Run the notebook**
+Open `chlorhexidine_survival_analysis.ipynb` in Jupyter, VS Code or Google Colab and run all cells from the repository root (the notebook reads `Data/Data form Chlorhexidine Trial.xlsx`).
+
 ### **📈 Results Generated** 
 
 ## **This notebook produces:**
@@ -183,8 +198,9 @@ openpyxl
 
 ## License:
 
-This project is licensed under the MIT License.
+The code in this project is licensed under the MIT License.
 Use freely for academic, research, or professional work.
+The MIT License does not cover the trial dataset; see **Source Study & Data** above.
 
 
 ### Author 
